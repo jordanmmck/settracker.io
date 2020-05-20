@@ -12,28 +12,27 @@
 </template>
 
 <style scoped lang="scss">
-#title {
-  a {
-    color: black;
-    text-decoration: none;
-  }
-}
-
 #header {
-  background: rgb(230, 230, 230);
-}
+  background: rgb(248, 226, 255);
+  #title {
+    padding-top: 20px;
+    a {
+      color: rgb(39, 39, 39);
+      text-decoration: none;
+    }
+  }
+  #nav {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    a {
+      font-weight: bold;
+      color: #1400c7;
+      margin: 0 25px;
 
-#nav {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    margin: 0 25px;
-
-    &.router-link-exact-active {
-      color: #42b983;
+      &.router-link-exact-active {
+        color: #c32aff;
+      }
     }
   }
 }

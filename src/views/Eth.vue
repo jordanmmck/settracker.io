@@ -1,7 +1,13 @@
 <template>
-  <div class="home">ETH</div>
+  <div class="home">{{ getData["data"]["rebalancing_sets"][0]["id"] }}</div>
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    getData() {
+      return this.$store.getters.getData;
+    },
+  },
+};
 </script>

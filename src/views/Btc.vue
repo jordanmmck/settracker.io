@@ -1,48 +1,26 @@
 <template>
   <div id="container">
-    <div class="progress">
-      <div
-        class="progress-bar"
-        role="progressbar"
-        style="width: 25%;"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      >
-        25%
-      </div>
-    </div>
-    <hr />
-    <div class="progress" style="height: 25px;">
-      <div
-        class="progress-bar"
-        role="progressbar"
-        style="width: 25%;"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      >
-        25%
-      </div>
-    </div>
-    <hr />
     <div class="progress" style="height: 20px;">
       <div
         class="progress-bar"
         role="progressbar"
-        style="width: 25%;"
+        :style="{'width':val+'%'}"
         aria-valuenow="25"
         aria-valuemin="0"
         aria-valuemax="100"
-      >
-        25%
-      </div>
+      >25%</div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      val: 50
+    };
+  }
+};
 </script>
 
 <style>

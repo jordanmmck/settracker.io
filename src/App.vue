@@ -7,10 +7,14 @@
 
 <script>
 import Header from "./components/Header.vue";
+
 export default {
   components: {
-    appHeader: Header
-  }
+    appHeader: Header,
+  },
+  mounted() {
+    this.$store.dispatch("setData");
+  },
 };
 </script>
 
